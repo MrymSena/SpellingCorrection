@@ -56,10 +56,10 @@ for row in WordsArray:
     Suggest.append(row[0])
     a = a + 1
 
-if(min(Distance)==1):
-    print("Aşağıdakilerden birini mi demek istediniz?")
+if(min(Distance)!=0):
+    print "Asagidakilerden birini mi demek istediniz:"
 #print minD
     for dist in range(len(Distance)):
-        if(Distance[dist]==1):
-            print(Suggest[dist].lower())
+        if(Distance[dist]==min(Distance)):
+            print Suggest[dist].lower();
 
